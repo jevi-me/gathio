@@ -11,7 +11,7 @@
     {{#if editingEnabled}}
       <button type="button" id="editEvent" class="btn btn-success text-nowrap" data-event-id="{{eventGroupData.id}}" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i> Edit group</button>
     {{else}}
-      <button type="button" id="editEvent" class="btn btn-success text-nowrap" data-event-id="{{eventGroupData.id}}" data-toggle="modal" data-target="#editTokenModal"><i class="fas fa-edit"></i> Edit group</button>
+     <!-- <button type="button" id="editEvent" class="btn btn-success text-nowrap" data-event-id="{{eventGroupData.id}}" data-toggle="modal" data-target="#editTokenModal"><i class="fas fa-edit"></i> Edit group</button>-->
     {{/if}}
   </div>
 </div>
@@ -76,11 +76,11 @@
     </div>
     <div class="col-lg-3" id="eventActions">
       <aside class="btn-group-vertical d-flex" role="group" aria-label="Event actions">
-        <button type="button" class="btn btn-outline-secondary btn-sm"
+        <!--<button type="button" class="btn btn-outline-secondary btn-sm"
           data-event-id="{{eventGroupData.id}}" data-toggle="modal"
           data-target="#subscribeModal">
           <i class="fas fa-envelope"></i> Subscribe to updates
-        </button>
+        </button>-->
         <button type="button" id="exportICS" class="btn btn-outline-secondary
           btn-sm" data-event-id="{{eventGroupData.id}}">
           <i class="fas fa-download"></i> Export as ICS

@@ -11,9 +11,9 @@
     {{#if editingEnabled}}
       <button type="button" id="editEvent" class="btn btn-success" {{#if eventHasConcluded}}disabled{{/if}} data-event-id="{{eventData.id}}" data-toggle="modal" data-target="#editModal"><i class="fas fa-edit"></i> Edit event</button>
     {{else}}
-      <button type="button" id="editEvent" class="btn btn-success" {{#if eventHasConcluded}}disabled{{/if}} data-event-id="{{eventData.id}}" data-toggle="modal" data-target="#editTokenModal"><i class="fas fa-edit"></i> Edit event</button>
+      <!--<button type="button" id="editEvent" class="btn btn-success" {{#if eventHasConcluded}}disabled{{/if}} data-event-id="{{eventData.id}}" data-toggle="modal" data-target="#editTokenModal"><i class="fas fa-edit"></i> Edit event</button>-->
     {{/if}}
-  </div>
+    </div>
 </div>
 <div class="container my-4 pr-0">
   <div class="row">
@@ -122,6 +122,9 @@
 <div class="card mb-4" id="eventDescription">
   <h5 class="card-header">About</h5>
   <div class="card-body">
+    {{#if eventHasCoverImage}}
+    <img src="/events/{{eventData.image}}" alt="Event Image" width="375">
+    {{/if}}
     {{{parsedDescription}}}
   </div>
 </div>
@@ -151,7 +154,7 @@
         {{/each}}
       </ul>
     {{else}}
-      <p class="text-center text-muted mb-0">No attendees yet!</p>
+      <p class="text-center text-muted mb-0">RSVP</p>
     {{/if}}
   </div>
 </div>
