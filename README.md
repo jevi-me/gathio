@@ -10,7 +10,7 @@ You can use the publicly hosted version [here](https://gath.io).
 
 See [the Wiki](https://github.com/lowercasename/gathio/wiki/install) for installation instructions.
 
-
+```
 cd /srv/
 apt update
 apt install git
@@ -28,6 +28,7 @@ systemctl daemon-reload
 systemctl start gathio
 apt install nginx
 nano /etc/nginx/site-enabled/default
+```
 
 ```
   location / {
@@ -35,8 +36,9 @@ nano /etc/nginx/site-enabled/default
   }
 ```
 
+```
 systemctl start nginx
 nginx -t
 nginx -s reload
-
+```
 link-> <site>/new/event/public
